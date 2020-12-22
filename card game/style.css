@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Navidad";
+  src: url("fonts/navidad-erjj-webfont.woff");
+}
+
+@font-face {
+  font-family: "Navidad";
+  src: url("fonts/navidad-erjj-webfont.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #d0eaee;
+  font-family: "Navidad", sans-serif;
+  color: #2b2b2b;
+}
+
+.screen {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  background-color: rgba(166, 13, 13, 0.9);
+  color: #fff;
+  position: fixed;
+  z-index: 2;
+}
+
+.screen div {
+  margin: auto;
+}
+
+.screen div h1 {
+  font-size: 5em;
+  letter-spacing: .06em;
+  margin-bottom: .5em;
+}
+
+.screen div p {
+  font-size: 2em;
+  letter-spacing: 0.027em;
+  margin-bottom: 1em;
+}
+
+.screen div button {
+  background-color: transparent;
+  padding: .8em 1em;
+  font-size: 1em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Navidad", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.screen div button:hover {
+  background-color: #fff;
+  color: #a60d0d;
+  font-weight: 400;
+}
+
+#main {
+  padding-top: 7%;
+}
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game .records {
+  width: 20%;
+  padding: 0 2em;
+}
+
+.game .records div {
+  margin-bottom: 2em;
+}
+
+.game .records div h2 {
+  font-size: 1.85em;
+}
+
+.game .records div p {
+  font-size: 2em;
+  margin-top: .5em;
+}
+
+.game .records div ol {
+  padding-top: .5em;
+}
+
+.game .records div li {
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+.game .left {
+  text-align: end;
+}
+
+.game .gameBoard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 58%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.game .gameBoard .card {
+  width: 120px;
+  height: 140px;
+  margin: 5px;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.game .gameBoard .card:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.game .gameBoard .card:hover {
+  cursor: pointer;
+}
+
+.game .gameBoard .card.flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.game .gameBoard .card-front, .game .gameBoard .card-back {
+  position: absolute;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.game .gameBoard .card-front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

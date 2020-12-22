@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Christmas Card Match</title>
+</head>
+<body>
+    <section class="screen opening">
+        <div>
+            <h1>Christmas Card Match</h1>
+            <p>See how fast you can match!</p>
+            <button>Let's Play</button>
+        </div>
+    </section>
+    <section class="screen gameOver hide">
+        <div>
+            <h1>Your Time</h1>
+            <p id="finishedTime">00:00:00</p>
+            <p id="endMessage">Could be faster.</p>
+            <button>Play Again</button>
+        </div>
+    </section>
+    <section>
+        <div id="main">
+            <div class="game">
+                <div class="records left">
+                    <div>
+                        <h2>Time</h2>
+                        <p id="timer">00:00:00</p>
+                    </div>
+                    <div>
+                        <h2>Flips</h2>
+                        <p id="flips">0</p>
+                    </div>
+                </div>
+                <div class="gameBoard">
+                    <div class="card" data-card="tree">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/tree.gif" alt="">
+                    </div>
+                    <div class="card" data-card="tree">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/tree.gif" alt="">
+                    </div>
+                    <div class="card" data-card="bulb">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/bulb.gif" alt="">
+                    </div>
+                    <div class="card" data-card="bulb">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/bulb.gif" alt="">
+                    </div>
+                    <div class="card" data-card="candycane">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/candycane.gif" alt="">
+                    </div>
+                    <div class="card" data-card="candycane">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/candycane.gif" alt="">
+                    </div>
+                    <div class="card" data-card="holly">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/holly.gif" alt="">
+                    </div>
+                    <div class="card" data-card="holly">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/holly.gif" alt="">
+                    </div>
+                    <div class="card" data-card="snowflake">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/snowflake.gif" alt="">
+                    </div>
+                    <div class="card" data-card="snowflake">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/snowflake.gif" alt="">
+                    </div>
+                    <div class="card" data-card="stocking">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/stocking.gif" alt="">
+                    </div>
+                    <div class="card" data-card="stocking">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/stocking.gif" alt="">
+                    </div>
+                    <div class="card" data-card="treelight">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/treelight.gif" alt="">
+                    </div>
+                    <div class="card" data-card="treelight">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/treelight.gif" alt="">
+                    </div>
+                    <div class="card" data-card="wreath">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/wreath.gif" alt="">
+                    </div>
+                    <div class="card" data-card="wreath">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/wreath.gif" alt="">
+                    </div>
+                    <div class="card" data-card="penguin">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/penguin.gif" alt="">
+                    </div> 
+                    <div class="card" data-card="penguin">
+                        <img class="card-face card-back" src="images/card-back.gif" alt="">
+                        <img class="card-face card-front" src="images/penguin.gif" alt="">
+                    </div>
+                </div>
+                <div class="records right">
+                    <div>
+                        <h2>Match</h2>
+                        <p id="match">0</p>
+                    </div>
+                    <div>
+                        <h2>Best Times</h2>
+                        <ol id="bestTimes"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="cardGame.js"></script>
+</body>
+</html>
